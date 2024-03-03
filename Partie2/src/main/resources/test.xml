@@ -1,0 +1,8 @@
+<beans>
+    <bean id="serviceA" className="org.example.DI.ServiceA">
+
+    </bean>
+    <bean id="serviceB" className="org.example.DI.ServiceB">
+        <property name="c" ref="serviceA"/>
+    </bean>
+</beans>
